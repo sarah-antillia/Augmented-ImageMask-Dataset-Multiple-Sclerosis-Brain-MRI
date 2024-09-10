@@ -1,5 +1,5 @@
-<h2>Augmented-ImageMask-Dataset-Multiple-Sclerosis-Brain-MRI  (2024/09/11)</h2>
-This is Augmented ImageMask Dataset for <a href="https://data.mendeley.com/datasets/8bctsm8jz7/1">
+<h2>ImageMask-Dataset-Multiple-Sclerosis-Brain-MRI  (2024/09/11)</h2>
+This is ImageMask Dataset for <a href="https://data.mendeley.com/datasets/8bctsm8jz7/1">
 Brain MRI Dataset of Multiple Sclerosis with Consensus Manual Lesion Segmentation and Patient Meta Information 
 </a>
 <br>
