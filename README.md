@@ -5,7 +5,7 @@ Brain MRI Dataset of Multiple Sclerosis with Consensus Manual Lesion Segmentatio
 <br>
 <br> 
 <b>Download ImageMask-Dataset</b><br>
-You can download the Multiple-Sclerosis-Brain-MRI-T2 ImageMask Dataset, derived by us from the original Multiple-Sclerosis-Brain-MRI,
+You can download our Multiple-Sclerosis-Brain-MRI-T2 ImageMask Dataset, derived by us from the original Multiple-Sclerosis-Brain-MRI,
  from the google drive 
 <a href="https://drive.google.com/file/d/1lnwZ_lQ9OUBUkEHsJBVZScmLSBk8Obsk/view?usp=sharing">
 Multiple-Sclerosis-Brain-MRI-T2-ImageMask-Dataset.zip</a>
@@ -13,6 +13,7 @@ Multiple-Sclerosis-Brain-MRI-T2-ImageMask-Dataset.zip</a>
  
 
 <h3>1. Dataset Citation</h3>
+We used the following dataset to create our ImageMask dataset 
 <a href="https://data.mendeley.com/datasets/8bctsm8jz7/1">
 Brain MRI Dataset of Multiple Sclerosis with Consensus Manual Lesion Segmentation and Patient Meta Information 
 </a>
