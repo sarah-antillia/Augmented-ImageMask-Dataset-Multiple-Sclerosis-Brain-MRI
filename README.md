@@ -1,17 +1,24 @@
-<h2>ImageMask-Dataset-Multiple-Sclerosis-Brain-MRI  (2024/09/11)</h2>
+<h2>ImageMask-Dataset-Multiple-Sclerosis-Brain-MRI  (Updated: 2024/09/13)</h2>
+<li>2024/09/13: Added Multiple-Sclerosis-Brain-MRI-Flair-ImageMask-Dataset.</li>
+<br>
 This is ImageMask Dataset for <a href="https://data.mendeley.com/datasets/8bctsm8jz7/1">
-Brain MRI Dataset of Multiple Sclerosis with Consensus Manual Lesion Segmentation and Patient Meta Information 
+Brain MRI Dataset of Multiple Sclerosis with Consensus Manual Lesion Segmentation and Patient Meta Information. 
 </a>
 <br>
 <br> 
-<b>Download ImageMask-Dataset</b><br>
-You can download our Multiple-Sclerosis-Brain-MRI-T2 ImageMask Dataset, derived by us from the original Multiple-Sclerosis-Brain-MRI,
- from the google drive 
+<b>Download T2 ImageMask-Dataset</b><br>
+You can download 
 <a href="https://drive.google.com/file/d/1lnwZ_lQ9OUBUkEHsJBVZScmLSBk8Obsk/view?usp=sharing">
 Multiple-Sclerosis-Brain-MRI-T2-ImageMask-Dataset.zip</a>
+, which was derived by us from the original Multiple-Sclerosis-Brain-MRI,
 <br>
- 
-
+<br> 
+<b>Download Flair ImageMask-Dataset</b><br>
+You can download <a href="https://drive.google.com/file/d/1Wf3O5At5VJjxCY995ubh_OGptqdJTuQ0/view?usp=sharing">
+Multiple-Sclerosis-Brain-MRI-Flair-ImageMask-Dataset.zip</a>
+, which was derived by us from the original Multiple-Sclerosis-Brain-MRI,
+<br>
+<br>
 <h3>1. Dataset Citation</h3>
 We used the following dataset to create our ImageMask dataset 
 <a href="https://data.mendeley.com/datasets/8bctsm8jz7/1">
@@ -64,7 +71,7 @@ It contains the following Flair, T1, and T2 nii files for 60 patients.<br>
 
 </pre>
 
-<h3>3. Generate ImageMaskDataset </h3>
+<h3>3. Generate T2 ImageMaskDataset </h3>
 
 Please run the following command for Python script <a href="./ImageMaskDatasetGenerator.py">ImageMaskDatasetGenerator.py</a>.
 <br>
@@ -93,7 +100,7 @@ pincushion_distortion
 </pre>
 
 <br>
-<h3>4. Split master</h3>
+<h3>4. Split T2 master</h3>
 Please run the following command for Python script <a href="./split_master.py">split_master.py</a>.
 <br>
 <pre>
@@ -101,6 +108,7 @@ Please run the following command for Python script <a href="./split_master.py">s
 </pre>
 This command will generate test, train and valid subsets from Multiple-Sclerosis-Brain-MRI-master-T2.<br>
 <pre>
+./Multiple-Sclerosis-Brain-MRI-T2-ImageMask-Dataset
 ├─test
 │  ├─images
 │  └─masks
@@ -122,6 +130,56 @@ This command will generate test, train and valid subsets from Multiple-Sclerosis
 <b>Dataset Statistics</b><br>
 
 <img src="./Multiple-Sclerosis-Brain-MRI-T2-ImageMask-Dataset_Statistics.png" width="480" height="auto"><br>
+<!--
+ -->
+ 
+<h3>5. Generate Flair ImageMaskDataset </h3>
+
+Please run the following command for Python script <a href="./ImageMaskDatasetGenerator.py">ImageMaskDatasetGenerator.py</a>.
+<br>
+<pre>
+> python ImageMaskDatasetGenerator.py Flair
+</pre>
+This command will generate augmented 512x512 jpg image and mask datasets of Flair.<br>
+
+<pre>
+./Multiple-Sclerosis-Brain-MRI-master-Flair
+├─images
+└─masks
+</pre>
+
+<br>
+<h3>6. Split Flair master</h3>
+Please run the following command for Python script <a href="./split_master.py">split_master.py</a>.
+<br>
+<pre>
+> python split_master.py Flair
+</pre>
+This command will generate test, train and valid subsets from Multiple-Sclerosis-Brain-MRI-master-Flair.<br>
+<pre>
+./Multiple-Sclerosis-Brain-MRI-Flair-ImageMask-Dataset
+├─test
+│  ├─images
+│  └─masks
+├─train
+│  ├─images
+│  └─masks
+└─valid
+    ├─images
+    └─masks
+</pre>
+
+<b>train images sample</b><br>
+<img src="./asset/flair_train_images.png" width="1024" height="auto">
+<br>
+
+<b>train masks sample</b><br>
+<img src="./asset/flair_train_masks.png"  width="1024" height="auto">
+<br>
+<b>Dataset Statistics</b><br>
+
+<img src="./Multiple-Sclerosis-Brain-MRI-Flair-ImageMask-Dataset_Statistics.png" width="480" height="auto"><br>
+
 
 
 <b>References</b><br>

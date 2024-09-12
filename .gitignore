@@ -12,6 +12,10 @@ Multiple-Sclerosis-Brain-MRI-master-T2/
 Multiple-Sclerosis-Brain-MRI-T2-ImageMask-Dataset/
 Multiple-Sclerosis-Brain-MRI-T2-ImageMask-Dataset.zip
 
+Multiple-Sclerosis-Brain-MRI-master-Flair/
+Multiple-Sclerosis-Brain-MRI-Flair-ImageMask-Dataset/
+Multiple-Sclerosis-Brain-MRI-Flair-ImageMask-Dataset.zip
+
 # Distribution / packaging
 .Python
 build/
