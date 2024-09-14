@@ -7,14 +7,14 @@ Brain MRI Dataset of Multiple Sclerosis with Consensus Manual Lesion Segmentatio
 <br>
 <br> 
 <b>Download T2 ImageMask-Dataset</b><br>
-You can download 
+You can download <b>Pre-Augmented</b> 
 <a href="https://drive.google.com/file/d/1lnwZ_lQ9OUBUkEHsJBVZScmLSBk8Obsk/view?usp=sharing">
 Multiple-Sclerosis-Brain-MRI-T2-ImageMask-Dataset.zip</a>
 , which was derived by us from the original Multiple-Sclerosis-Brain-MRI,
 <br>
 <br> 
 <b>Download Flair ImageMask-Dataset</b><br>
-You can download <a href="https://drive.google.com/file/d/1Wf3O5At5VJjxCY995ubh_OGptqdJTuQ0/view?usp=sharing">
+You can download <b>Pre-Augmented</b> <a href="https://drive.google.com/file/d/1Wf3O5At5VJjxCY995ubh_OGptqdJTuQ0/view?usp=sharing">
 Multiple-Sclerosis-Brain-MRI-Flair-ImageMask-Dataset.zip</a>
 , which was derived by us from the original Multiple-Sclerosis-Brain-MRI,
 <br>
