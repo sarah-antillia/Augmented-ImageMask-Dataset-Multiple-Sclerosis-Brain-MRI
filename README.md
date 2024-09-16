@@ -98,7 +98,7 @@ This command will generate augmented 512x512 jpg image and mask datasets of T2.<
 └─masks
 </pre>
 The genetor script <a href="./ImageMaskDatasetGenerator.py">ImageMaskDatasetGenerator.py</a> is 
-really an offline dataset augmentation tool, which supports the following image transformation operations.<br>
+really an offline dataset augmentation tool, which supports the following image transformations.<br>
 <pre>
 hflip 
 deformation
@@ -107,6 +107,32 @@ barrel_distortion
 pincushion_distortion
 </pre>
 
+<table>
+<tr>
+<th>Deformation</th>
+<th>Distortion</th>
+</tr>
+<tr>
+<td><img src="./transformed/Deformed.png" width="512" height="auto"></td>
+<td><img src="./transformed/Distorted.png" width="512" height="auto"></td>
+</tr>
+</table>
+<br>
+
+<table>
+<tr>
+<th>Barrel distortion</th>
+<th>Pincushion distotion</th>
+
+</tr>
+<tr>
+<td><img src="./transformed/Barrel_distorted.png" width="512" height="auto"></td>
+<td><img src="./transformed/Pincushion_distorted.png" width="512" height="auto"></td>
+
+</tr>
+
+</table>
+<br>
 On detail of the deformation and distortion tools, please refer to our implementations;<br>
 <a href="https://github.com/sarah-antillia/Image-Deformation-Tool">Image-Deformation-Tool</a><br>
 <a href="https://github.com/sarah-antillia/Image-Distortion-Tool">Image-Distortion-Tool</a><br>
