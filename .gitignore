@@ -6,7 +6,7 @@ __pycache__/
 # C extensions
 *.so
 
-# 2024/09/11
+# 2024/09/16
 8bctsm8jz7-1/
 Multiple-Sclerosis-Brain-MRI-master-T2/
 Multiple-Sclerosis-Brain-MRI-T2-ImageMask-Dataset/
@@ -15,6 +15,10 @@ Multiple-Sclerosis-Brain-MRI-T2-ImageMask-Dataset.zip
 Multiple-Sclerosis-Brain-MRI-master-Flair/
 Multiple-Sclerosis-Brain-MRI-Flair-ImageMask-Dataset/
 Multiple-Sclerosis-Brain-MRI-Flair-ImageMask-Dataset.zip
+
+Multiple-Sclerosis-Brain-MRI-master-T1/
+Multiple-Sclerosis-Brain-MRI-T1-ImageMask-Dataset/
+Multiple-Sclerosis-Brain-MRI-T1-ImageMask-Dataset.zip
 
 # Distribution / packaging
 .Python

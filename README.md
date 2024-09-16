@@ -1,5 +1,6 @@
-<h2>ImageMask-Dataset-Multiple-Sclerosis-Brain-MRI  (Updated: 2024/09/13)</h2>
+<h2>ImageMask-Dataset-Multiple-Sclerosis-Brain-MRI  (Updated: 2024/09/16)</h2>
 <li>2024/09/13: Added Multiple-Sclerosis-Brain-MRI-Flair-ImageMask-Dataset.</li>
+<li>2024/09/16: Added Multiple-Sclerosis-Brain-MRI-T1-ImageMask-Dataset.</li>
 <br>
 This is ImageMask Dataset for <a href="https://data.mendeley.com/datasets/8bctsm8jz7/1">
 Brain MRI Dataset of Multiple Sclerosis with Consensus Manual Lesion Segmentation and Patient Meta Information. 
@@ -7,18 +8,25 @@ Brain MRI Dataset of Multiple Sclerosis with Consensus Manual Lesion Segmentatio
 <br>
 <br> 
 <b>Download T2 ImageMask-Dataset</b><br>
-You can download <b>Pre-Augmented</b> 
+You can download 
 <a href="https://drive.google.com/file/d/1lnwZ_lQ9OUBUkEHsJBVZScmLSBk8Obsk/view?usp=sharing">
 Multiple-Sclerosis-Brain-MRI-T2-ImageMask-Dataset.zip</a>
 , which was derived by us from the original Multiple-Sclerosis-Brain-MRI,
 <br>
 <br> 
 <b>Download Flair ImageMask-Dataset</b><br>
-You can download <b>Pre-Augmented</b> <a href="https://drive.google.com/file/d/1Wf3O5At5VJjxCY995ubh_OGptqdJTuQ0/view?usp=sharing">
+You can download <a href="https://drive.google.com/file/d/1Wf3O5At5VJjxCY995ubh_OGptqdJTuQ0/view?usp=sharing">
 Multiple-Sclerosis-Brain-MRI-Flair-ImageMask-Dataset.zip</a>
 , which was derived by us from the original Multiple-Sclerosis-Brain-MRI,
 <br>
 <br>
+<b>Download T1 ImageMask-Dataset</b><br>
+You can download <a href="https://drive.google.com/file/d/1yj1vS8w9_F1XVm6oCTfiwxOKAru9ZEk4/view?usp=sharing">
+Multiple-Sclerosis-Brain-MRI-T1-ImageMask-Dataset.zip</a>
+, which was derived by us from the original Multiple-Sclerosis-Brain-MRI,
+<br>
+<br>
+
 <h3>1. Dataset Citation</h3>
 We used the following dataset to create our ImageMask dataset 
 <a href="https://data.mendeley.com/datasets/8bctsm8jz7/1">
@@ -187,6 +195,56 @@ This command will generate test, train and valid subsets from Multiple-Sclerosis
 
 <img src="./Multiple-Sclerosis-Brain-MRI-Flair-ImageMask-Dataset_Statistics.png" width="480" height="auto"><br>
 
+
+<!--
+ -->
+ 
+<h3>7. Generate T1 ImageMaskDataset </h3>
+
+Please run the following command for Python script <a href="./ImageMaskDatasetGenerator.py">ImageMaskDatasetGenerator.py</a>.
+<br>
+<pre>
+> python ImageMaskDatasetGenerator.py T1
+</pre>
+This command will generate augmented 512x512 jpg image and mask datasets of T1.<br>
+
+<pre>
+./Multiple-Sclerosis-Brain-MRI-master-T1
+├─images
+└─masks
+</pre>
+
+<br>
+<h3>8. Split T1 master</h3>
+Please run the following command for Python script <a href="./split_master.py">split_master.py</a>.
+<br>
+<pre>
+> python split_master.py T1
+</pre>
+This command will generate test, train and valid subsets from Multiple-Sclerosis-Brain-MRI-master-T1.<br>
+<pre>
+./Multiple-Sclerosis-Brain-MRI-T1-ImageMask-Dataset
+├─test
+│  ├─images
+│  └─masks
+├─train
+│  ├─images
+│  └─masks
+└─valid
+    ├─images
+    └─masks
+</pre>
+
+<b>train images sample</b><br>
+<img src="./asset/t1_train_images.png" width="1024" height="auto">
+<br>
+
+<b>train masks sample</b><br>
+<img src="./asset/t1_train_masks.png"  width="1024" height="auto">
+<br>
+<b>Dataset Statistics</b><br>
+
+<img src="./Multiple-Sclerosis-Brain-MRI-T1-ImageMask-Dataset_Statistics.png" width="480" height="auto"><br>
 
 
 <b>References</b><br>
